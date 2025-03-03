@@ -1,0 +1,419 @@
+ERROR:API_wrapper.OpenAI_API:An Exception occured during calling the LLM API: 'model'
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: <Response [200]>
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: <Response [200]>
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: <Response [200]>
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: <Response [200]>
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: <Response [200]>
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b
+INFO:API_wrapper.OpenAI_API:finish reason: stop
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: <Response [200]>
+INFO:API_wrapper.OpenAI_API:finish reason: stop
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: <Response [400]>
+ERROR:API_wrapper.OpenAI_API:An Exception occured during calling the LLM API: 'choices'
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: <Response [400]>
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: <class 'requests.models.Response'>
+ERROR:API_wrapper.OpenAI_API:An Exception occured during calling the LLM API: 'choices'
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: <Response [400]>
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: <class 'int'>
+ERROR:API_wrapper.OpenAI_API:An Exception occured during calling the LLM API: 'choices'
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call was unsuccessful: <class 'int'>
+ERROR:API_wrapper.OpenAI_API:An Exception occured during calling the LLM API: 'choices'
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call was unsuccessful: 400
+ERROR:API_wrapper.OpenAI_API:An Exception occured during calling the LLM API: 'choices'
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+ERROR:API_wrapper.OpenAI_API:LLM API call was unsuccessful: 400
+ERROR:API_wrapper.OpenAI_API:An Exception occured during calling the LLM API: 'choices'
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+ERROR:API_wrapper.OpenAI_API:LLM API call was unsuccessful: 400
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+ERROR:API_wrapper.OpenAI_API:LLM API call was unsuccessful: 400
+ERROR:API_wrapper.OpenAI_API:An Exception occured during calling the LLM API: 'choices'
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+ERROR:API_wrapper.OpenAI_API:LLM API call was unsuccessful: 400
+ERROR:API_wrapper.OpenAI_API:An Exception occured during calling the LLM API: 'choices'
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+ERROR:API_wrapper.OpenAI_API:LLM API call was unsuccessful: 400
+ERROR:API_wrapper.OpenAI_API:An Exception occured during calling the LLM API: Check call parameters
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+ERROR:API_wrapper.OpenAI_API:LLM API call was unsuccessful: 400
+ERROR:API_wrapper.OpenAI_API:An Exception occured during calling the LLM API: Check call parameters
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+ERROR:API_wrapper.OpenAI_API:An Exception occured during calling the LLM API: Object of type set is not JSON serializable
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+ERROR:API_wrapper.OpenAI_API:An Exception occured during calling the LLM API: Object of type set is not JSON serializable
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+ERROR:API_wrapper.OpenAI_API:An Exception occured during calling the LLM API: Object of type set is not JSON serializable
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
