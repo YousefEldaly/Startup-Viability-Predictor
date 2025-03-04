@@ -1,8 +1,9 @@
 {
-    "market_keyword" : {
-        "prompt": "You will assist me in finding external market knowledge about a startup.\nThink step by step.\nYour task is to summarise the information into 1 keyword that best describes the market that the startup is in.\nSample Output: Chinese Pharmaceutical Market.\nDO NOT output anything other than the keyword",
-        "prompt2": "Act as an Expert Market Analyst.\nYou run in a loop of thought, Action, PAUSE, Observation. At the end of the loop you output an answer. Use Thought to describe your thoughts about the question you have been asked. Use Action to run one of the actions available to you then return PAUSE. Observation will be the result of running those actions./nThe Action: Summarize the following startup info into 1 meaningful and effecient search query that best describes the startup's market.\nRun the loop 5 times and give me the final output.\nDO NOT output anything other than the search query"
+    "market_keyword": {
+        "prompt": "You will assist me in finding external market knowledge about a startup.\nThink step by step.\nYour task is to summarise the information into 1 keyword that best describes the market that the startup is in.\nSample Output: Chinese Pharmaceutical Market.\nDO NOT output anything other than the keyword.",
+        "prompt2": "Act as an Expert Market Analyst.\nYou run in a loop of Thought, Action, PAUSE, Observation. At the end of the loop you output an answer. Use Thought to describe your thoughts about the question you have been asked. Use Action to run one of the actions available to you then return PAUSE. Observation will be the result of running those actions.\nRun the loop 5 times and give me the final output.",
+        "json_response_format": {
+            "search_query": ""
+        }
     }
-
-
 }

@@ -2,6 +2,7 @@ import requests
 import json
 import logging
 from utils.configs import Config
+from utils import extract_json_from_llm_response
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -29,7 +30,7 @@ class OpenAI_API:
             "messages": [
               {
                 "role": "system",
-                "content": f"{system_content} \nRespond strictly with a JSON object. Do not explain, analyze, or include extra text."
+                "content": f"{system_content}"
               },
               {
                 "role": "user",
@@ -43,16 +44,48 @@ class OpenAI_API:
 
         self._log_API_call_status(response.status_code)
 
-
-        response = response.json()
         
-        return response['choices'][0]['message']['content']
+        return response
       
       except Exception as e:
         logger = logging.getLogger(__name__)
         logging.basicConfig(filename=Config.LOG_FILE_NAME, encoding="utf-8", level=logging.ERROR)
         logger.error(f"An Exception occured during calling the LLM API: {str(e)}")
     
+    def get_json_response(self, system_content, user_content, json_format):
+      logger = logging.getLogger(__name__)
+      logging.basicConfig(filename=Config.LOG_FILE_NAME, encoding="utf-8", level=logging.INFO)
+
+      try:
+        system_content = f"{system_content}\nRespond strictly with a JSON object following this format {json_format}. Do not explain, analyze, or include extra text."
+        extracted_json_object = self._get_json_response(system_content, user_content)
+        
+        return extracted_json_object
+      
+      except ValueError as ve:
+        logger.setLevel(logging.ERROR)
+        logger.error(f"an exception occured while extracting json {ve}")
+        logger.setLevel(logging.INFO)
+
+        for i in range(3):
+          logger.info(f"Trial {i+1} of generating a different response")
+          extracted_json_object = self._get_json_response(system_content, user_content)
+          if extracted_json_object:
+            return extracted_json_object
+
+
+    def _get_json_response(self, system_content, user_content):
+      logger = logging.getLogger(__name__)
+      logging.basicConfig(filename=Config.LOG_FILE_NAME, encoding="utf-8", level=logging.INFO)
+      response = self.get_response(system_content, user_content)
+      response_content = response.json()['choices'][0]['message']['content']
+      logger.info("Extracting json from response content")
+      extracted_json_object = extract_json_from_llm_response(response_content)
+      logger.info("JSON extracted successfully")
+
+      return extracted_json_object
+
+
     def _log_start_API_call_info(self):
       logger = logging.getLogger(__name__)
       logging.basicConfig(filename=Config.LOG_FILE_NAME, encoding="utf-8", level=logging.INFO)
@@ -67,5 +100,6 @@ class OpenAI_API:
       if status_code == 200:
         logger.info(f"LLM API call done sucessfully: {status_code}")
       else:
+        logger.setLevel(logging.ERROR)
         logger.error(f"LLM API call was unsuccessful: {status_code}")
         raise Exception('Check call parameters; api_key, model, etc.')
