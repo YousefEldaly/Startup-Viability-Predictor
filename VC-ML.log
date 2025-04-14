@@ -1,0 +1,26 @@
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+ERROR:API_wrapper.OpenAI_API:An Exception occured during calling the LLM API: HTTPSConnectionPool(host='openrouter.ai', port=443): Max retries exceeded with url: /api/v1/chat/completions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000154919EF5F0>: Failed to resolve 'openrouter.ai' ([Errno 11001] getaddrinfo failed)"))
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:Extracting json from response content
+INFO:API_wrapper.OpenAI_API:JSON extracted successfully
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:Extracting json from response content
+INFO:API_wrapper.OpenAI_API:JSON extracted successfully
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:Calling LLM API
+INFO:API_wrapper.OpenAI_API:Model Name: deepseek/deepseek-r1-distill-llama-70b:free
+INFO:API_wrapper.OpenAI_API:#################################
+INFO:API_wrapper.OpenAI_API:LLM API call done sucessfully: 200
+INFO:API_wrapper.OpenAI_API:Extracting json from response content
+INFO:API_wrapper.OpenAI_API:JSON extracted successfully

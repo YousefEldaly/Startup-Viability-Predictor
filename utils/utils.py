@@ -4,10 +4,12 @@ import json
 #TODO: handle Exceptions that rise from those
 import ast
 import json
-
 import ast
 import json
+import queue
+import atexit
 import re
+import logging
 
 def extract_json_from_llm_response(response_content):
     # Try to locate the JSON part
@@ -62,3 +64,26 @@ def get_json_response_format(name, **kwargs):
         raise ValueError(f"JSON response format not found for prompt '{name}'")
 
     return json_format
+
+def _get_logging_setup():
+    with open("config.json", "r") as file:
+        CONFIG = json.load(file)
+    logging_setup = CONFIG.get("logger_setup")
+
+    if not logging_setup:
+        raise ValueError(f"format 'logger_setup' not found!")
+    
+    log_queue = queue.Queue(-1)
+    logging_setup["handlers"]["queue_handler"]["queue"] = log_queue
+    
+    
+    return logging_setup
+
+def setup_logging():
+    logging.config.dictConfig(_get_logging_setup())
+    # queue_handler = logging.getHandlerByName("queue_handler")
+    # if queue_handler is not None:
+    #     queue_handler.listener.start()
+    #     atexit.register(queue_handler.listener.stop)
+
+    

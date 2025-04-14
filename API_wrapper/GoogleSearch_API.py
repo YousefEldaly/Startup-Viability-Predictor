@@ -18,7 +18,14 @@ class GoogleSearch_API:
         params = {
             'q' : query,
             'key' : self.api_key,
-            'cx' : self.search_engine_id
+            'cx' : self.search_engine_id,
+            'dateRestrict' : 'y[1]',
+            'filter' : '1',
+            'gl' : 'countryEG',
+            'num' : results_num,
+            'safe' : 'active' 
+
+
 
         }
 
