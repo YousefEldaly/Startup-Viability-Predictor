@@ -1,0 +1,21 @@
+id	email	gender	Nationality	place of current residence	residential status	company name	startup industry sector	idea overview	number of full time and part time team members (including founders / co-founders)	founder bio	founder age	founder level of education	recent education field	did the founder found a company/startup before	product description	market size	market growth rate	key market trends	market viability score	main revenue stream	innovation score	market fit score
+1	founder1@example.com	Female	Egypt	Egypt	Citizen	GreenTech Solutions	Renewable Energy	Developing affordable solar panels for rural areas	5													
+2	founder2@example.com	Male	Egypt	Egypt	Citizen	HealthBridge	HealthTech	Telemedicine platform connecting patients with doctors	8													
+3	founder3@example.com	Prefer not to Answer	Egypt	Egypt	Citizen	AgriSmart	AgriTech	Smart irrigation systems for efficient water use	4													
+4	founder4@example.com	Female	Egypt	Egypt	Citizen	FinEdu	EdTech	Online financial literacy courses for youth	6													
+5	founder5@example.com	Male	Egypt	Egypt	Citizen	ShopEase	E-Commerce	Marketplace for local artisans to sell handmade products	7													
+6	founder6@example.com	Female	Egypt	Egypt	Citizen	MedConnect	HealthTech	Platform connecting patients with specialized doctors	9													
+7	founder7@example.com	Male	Egypt	Egypt	Citizen	AgroTech Solutions	AgriTech	Drone technology for crop monitoring	5													
+8	founder8@example.com	Prefer not to Answer	Egypt	Egypt	Citizen	LearnHub	EdTech	Personalized learning platform for students	6													
+9	founder9@example.com	Female	Egypt	Egypt	Citizen	ShopLocal	E-Commerce	Supporting local businesses through online sales	4													
+10	founder10@example.com	Male	Egypt	Egypt	Citizen	HealthPlus	HealthTech	AI-driven health diagnostics tool	8													
+11	founder11@example.com	Female	Egypt	Egypt	Citizen	GreenFarm	AgriTech	Sustainable farming solutions for smallholders	5													
+12	founder12@example.com	Male	Egypt	Egypt	Citizen	SkillUp	EdTech	Vocational training programs for youth	7													
+13	founder13@example.com	Prefer not to Answer	Egypt	Egypt	Citizen	BuyEgypt	E-Commerce	E-commerce platform for Egyptian products	6													
+14	founder14@example.com	Female	Egypt	Egypt	Citizen	MedAid	HealthTech	Mobile app for emergency medical assistance	9													
+15	founder15@example.com	Male	Egypt	Egypt	Citizen	AgriGrow	AgriTech	Organic farming consultancy services	4													
+16	founder16@example.com	Female	Egypt	Egypt	Citizen	LearnEgypt	EdTech	Educational content tailored for Egyptian curriculum	6													
+17	founder17@example.com	Male	Egypt	Egypt	Citizen	MarketPlace	E-Commerce	Online platform for farmers to sell produce	5													
+18	founder18@example.com	Prefer not to Answer	Egypt	Egypt	Citizen	HealthTrack	HealthTech	Wearable devices for health monitoring	7													
+19	founder19@example.com	Female	Egypt	Egypt	Citizen	AgriMarket	AgriTech	Connecting farmers with buyers directly	6													
+20	founder20@example.com	Male	Egypt	Egypt	Citizen	EdLearn	EdTech	Interactive learning tools for schools	8													

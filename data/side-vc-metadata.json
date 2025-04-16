@@ -1,0 +1,63 @@
+{
+    "fields": [
+    {
+    "name": "id",
+    "type": "integer"
+    },
+    {
+        "name": "Industry_Growth",
+        "type": "categorical",
+        "categories": ["Yes", "No", "N/A"]
+    },
+    {
+        "name": "Target_Market_Size",
+        "type": "categorical",
+        "categories": ["Small", "Medium", "Large", "N/A"]
+    },
+    {
+        "name": "Development_Speed",
+        "type": "categorical",
+        "categories": ["Slower", "Same", "Faster", "N/A"]
+    },
+    {
+        "name": "Adaptability",
+        "type": "categorical",
+        "categories": ["Not Adaptable", "Somewhat Adaptable", "Very Adaptable", "N/A"]
+    },
+    {
+        "name": "Funding_Level",
+        "type": "categorical",
+        "categories": ["Below Average", "Average", "Above Average", "N/A"]
+    },
+    {
+        "name": "Customer_Reviews",
+        "type": "categorical",
+        "categories": ["Negative", "Mixed", "Positive", "N/A"]
+    },
+    {
+        "name": "Product_Market_Fit",
+        "type": "categorical",
+        "categories": ["Weak", "Moderate", "Strong", "N/A"]
+    },
+    {
+        "name": "Sentiment_Analysis",
+        "type": "categorical",
+        "categories": ["Negative", "Neutral", "Positive", "N/A"]
+    },
+    {
+        "name": "Innovation_Term_Frequency",
+        "type": "categorical",
+        "categories": ["Rarely", "Sometimes", "Often", "N/A"]
+    },
+    {
+        "name": "Technology_Emphasis",
+        "type": "categorical",
+        "categories": ["No", "Mentioned", "Emphasized", "N/A"]
+    },
+    {
+        "name": "Timing_Alignment",
+        "type": "categorical",
+        "categories": ["Too Early", "Just Right", "Too Late", "N/A"]
+    }
+    ]
+}

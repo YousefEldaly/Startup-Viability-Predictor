@@ -1,0 +1,21 @@
+id,Industry_Growth,Target_Market_Size,Development_Speed,Adaptability,Funding_Level,Customer_Reviews,Product_Market_Fit,Sentiment_Analysis,Innovation_Term_Frequency,Technology_Emphasis,Timing_Alignment
+1,Yes,Large,Faster,Very Adaptable,Above Average,Positive,Strong,Positive,Often,Emphasized,Just Right
+2,Yes,Medium,Same,Somewhat Adaptable,Average,Mixed,Moderate,Neutral,Sometimes,Mentioned,Just Right
+3,No,Small,Slower,Not Adaptable,Below Average,Negative,Weak,Negative,Rarely,No,Too Early
+4,Yes,Large,Faster,Very Adaptable,Above Average,Positive,Strong,Positive,Often,Emphasized,Just Right
+5,N/A,Medium,Faster,Somewhat Adaptable,Average,Mixed,Moderate,Neutral,Sometimes,Mentioned,Just Right
+6,Yes,Large,Faster,Very Adaptable,Above Average,Positive,Strong,Positive,Often,Emphasized,Just Right
+7,No,Medium,Same,Somewhat Adaptable,Average,Mixed,Moderate,Neutral,Sometimes,Mentioned,Too Late
+8,Yes,Large,Faster,Very Adaptable,Above Average,Positive,Strong,Positive,Often,Emphasized,Just Right
+9,Yes,Small,Slower,Somewhat Adaptable,Below Average,Mixed,Moderate,Neutral,Sometimes,Mentioned,Too Early
+10,Yes,Medium,Same,Very Adaptable,Average,Positive,Strong,Positive,Often,Emphasized,Just Right
+11,Yes,Large,Faster,Very Adaptable,Above Average,Positive,Strong,Positive,Often,Emphasized,Just Right
+12,No,Small,Slower,Not Adaptable,Below Average,Negative,Weak,Negative,Rarely,No,Too Early
+13,Yes,Large,Faster,Very Adaptable,Above Average,Positive,Strong,Positive,Often,Emphasized,Just Right
+14,N/A,Medium,Faster,Somewhat Adaptable,Average,Mixed,Moderate,Neutral,Sometimes,Mentioned,Just Right
+15,Yes,Large,Faster,Very Adaptable,Above Average,Positive,Strong,Positive,Often,Emphasized,Just Right
+16,No,Medium,Same,Somewhat Adaptable,Average,Mixed,Moderate,Neutral,Sometimes,Mentioned,Too Late
+17,Yes,Large,Faster,Very Adaptable,Above Average,Positive,Strong,Positive,Often,Emphasized,Just Right
+18,Yes,Small,Slower,Somewhat Adaptable,Below Average,Mixed,Moderate,Neutral,Sometimes,Mentioned,Too Early
+19,Yes,Medium,Same,Very Adaptable,Average,Positive,Strong,Positive,Often,Emphasized,Just Right
+20,Yes,Large,Faster,Very Adaptable,Above Average,Positive,Strong,Positive,Often,Emphasized,Just Right
