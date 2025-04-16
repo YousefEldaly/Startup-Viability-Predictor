@@ -53,7 +53,7 @@ class OpenAI_API:
         return response
       
       except Exception as e:
-        logger.error(f"An Exception occured during calling the LLM API: {str(e)}")
+        logger.exception(f"An Exception occured during calling the LLM API: {str(e)}")
     
     def get_json_response(self, system_content, user_content, json_format):
 
@@ -64,7 +64,7 @@ class OpenAI_API:
         return extracted_json_object
       
       except ValueError as ve:
-        logger.error(f"an exception occured while extracting json {ve}")
+        logger.exception(f"an exception occured while extracting json {ve}")
 
         for i in range(3):
           logger.warning(f"Trial {i+1} of generating a different response")
@@ -91,5 +91,5 @@ class OpenAI_API:
       if status_code == 200:
         logger.info(f"LLM API call done sucessfully: {status_code}")
       else:
-        logger.error(f"LLM API call was unsuccessful: {status_code}")
+        logger.exception(f"LLM API call was unsuccessful: {status_code}")
         raise Exception('Check call parameters; api_key, model, etc.')
