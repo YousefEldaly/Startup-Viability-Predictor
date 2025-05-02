@@ -2,12 +2,13 @@ from API_wrapper import OpenAI_API, GoogleSearch_API
 from utils.configs import Config
 import logging.config
 import atexit
-from utils import get_prompt, get_json_response_format, setup_logging
+from utils import get_prompt, get_json_response_format, setup_logging, update_root_dir_in_env
 import json
 
 logger = logging.getLogger(__name__)
 
 
+update_root_dir_in_env()
 setup_logging()
 
 

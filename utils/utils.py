@@ -10,6 +10,8 @@ import queue
 import atexit
 import re
 import logging
+import os
+
 
 def extract_json_from_llm_response(response_content):
     # Try to locate the JSON part
@@ -86,4 +88,26 @@ def setup_logging():
     #     queue_handler.listener.start()
     #     atexit.register(queue_handler.listener.stop)
 
+def update_root_dir_in_env():
+    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__)))
+
+    env_file_path = ".env"
+
+    with open(env_file_path, "r") as f:
+        lines = f.readlines()
+
+    root_dir_found = False
+    for i, line in enumerate(lines):
+        if line.startswith("ROOT_DIR="):
+            lines[i] = f"ROOT_DIR={root_dir}\n"
+            root_dir_found = True
+            break
+
+    if not root_dir_found:
+        lines.append(f"ROOT_DIR={root_dir}\n")
+
+    with open(env_file_path, "w") as f:
+        f.writelines(lines)
+
+    print(f"ROOT_DIR={root_dir} has been set in the .env file.")
     

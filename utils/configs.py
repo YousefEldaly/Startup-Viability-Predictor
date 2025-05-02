@@ -9,3 +9,4 @@ class Config:
     VC_SEARCH_ENGINE_ID = os.getenv('VC_SEARCH_ENGINE_ID')
     LLM_MODEL = os.getenv('LLM_MODEL')
     LOG_FILE_NAME = os.getenv('LOG_FILE_NAME')
+    ROOT_DIR = os.getenv('ROOT_DIR')
