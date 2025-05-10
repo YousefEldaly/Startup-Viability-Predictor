@@ -5,7 +5,7 @@ import requests
 import json
 import logging
 from utils.configs import Config
-from utils import extract_json_from_llm_response
+from utils.utils import extract_json_from_llm_response
 from dotenv import load_dotenv
 
 load_dotenv()

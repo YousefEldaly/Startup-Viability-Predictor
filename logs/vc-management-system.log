@@ -69,3 +69,42 @@
 [DEBUG|connectionpool|L1049 2025-05-02T19:40:21+0300: Starting new HTTPS connection (1): www.googleapis.com:443]
 [DEBUG|connectionpool|L544 2025-05-02T19:40:22+0300: https://www.googleapis.com:443 "GET /customsearch/v1?q=MENA+AI+Market&key=AIzaSyBlC9LDw1MO25M4u-HBsntzLzror6t7SzE&cx=61857f6a90158473c&dateRestrict=y%5B1%5D&filter=1&gl=countryEG&num=1&safe=active HTTP/1.1" 200 None]
 [INFO|GoogleSearch_API|L42 2025-05-02T19:40:22+0300: LLM API call done sucessfully: 200]
+[INFO|DocumentProcessor|L23 2025-05-10T17:06:52+0300: Extracting text from C:\Users\Yusuf Aldaly\Desktop\AutoInspecta pitch Presentation.pptx]
+[INFO|DocumentProcessor|L23 2025-05-10T17:09:00+0300: Extracting text from https://www.linkedin.com/in/yousef-eldaly-617420176/]
+[ERROR|DocumentProcessor|L45 2025-05-10T17:09:00+0300: An Exception occured while processing files: Can not detect format of given input: https://www.linkedin.com/in/yousef-eldaly-617420176/]
+Traceback (most recent call last):
+  File "d:\Study\Level4\grad project\VC-management-system\algorithms\parsing\DocumentProcessor.py", line 25, in extract_document_text
+    fmt = self.format_detector.detect_format(document_entry)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Study\Level4\grad project\VC-management-system\algorithms\parsing\DocumentFormatDetector.py", line 25, in detect_format
+    raise ValueError(f"Can not detect format of given input: {document_entry}")
+ValueError: Can not detect format of given input: https://www.linkedin.com/in/yousef-eldaly-617420176/
+[INFO|DocumentProcessor|L23 2025-05-10T17:13:30+0300: Extracting text from https://www.linkedin.com/in/yousef-eldaly-617420176/]
+[ERROR|DocumentProcessor|L45 2025-05-10T17:13:30+0300: An Exception occured while processing files: Can not find compatible parser with format linkedin]
+Traceback (most recent call last):
+  File "d:\Study\Level4\grad project\VC-management-system\algorithms\parsing\DocumentProcessor.py", line 38, in extract_document_text
+    self.parser = self.parser_factory(fmt)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Study\Level4\grad project\VC-management-system\algorithms\parsing\DocumentProcessor.py", line 59, in parser_factory
+    raise Exception(f"Can not find compatible parser with format {fmt}")
+Exception: Can not find compatible parser with format linkedin
+[INFO|DocumentProcessor|L23 2025-05-10T17:15:33+0300: Extracting text from https://www.linkedin.com/in/yousef-eldaly-617420176/]
+[ERROR|DocumentProcessor|L45 2025-05-10T17:15:33+0300: An Exception occured while processing files: Can not parse Linkedin profiles. This is against their rules]
+Traceback (most recent call last):
+  File "d:\Study\Level4\grad project\VC-management-system\algorithms\parsing\DocumentProcessor.py", line 38, in extract_document_text
+    self.parser = self.parser_factory(fmt)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Study\Level4\grad project\VC-management-system\algorithms\parsing\DocumentProcessor.py", line 59, in parser_factory
+    raise ValueError('Can not parse Linkedin profiles. This is against their rules')
+ValueError: Can not parse Linkedin profiles. This is against their rules
+[INFO|OpenAI_API|L87 2025-05-10T17:16:06+0300: Calling LLM API]
+[INFO|OpenAI_API|L88 2025-05-10T17:16:06+0300: Model Name: deepseek/deepseek-r1-distill-llama-70b:free]
+[DEBUG|connectionpool|L1049 2025-05-10T17:16:06+0300: Starting new HTTPS connection (1): openrouter.ai:443]
+[DEBUG|connectionpool|L544 2025-05-10T17:16:07+0300: https://openrouter.ai:443 "POST /api/v1/chat/completions HTTP/1.1" 200 None]
+[INFO|OpenAI_API|L92 2025-05-10T17:16:18+0300: LLM API call done sucessfully: 200]
+[INFO|OpenAI_API|L79 2025-05-10T17:16:18+0300: Extracting json from response content]
+[INFO|OpenAI_API|L81 2025-05-10T17:16:18+0300: JSON extracted successfully]
+[INFO|GoogleSearch_API|L16 2025-05-10T17:16:18+0300: Calling Google Search API]
+[DEBUG|connectionpool|L1049 2025-05-10T17:16:18+0300: Starting new HTTPS connection (1): www.googleapis.com:443]
+[DEBUG|connectionpool|L544 2025-05-10T17:16:18+0300: https://www.googleapis.com:443 "GET /customsearch/v1?q=MENA+AI+Market&key=AIzaSyBlC9LDw1MO25M4u-HBsntzLzror6t7SzE&cx=61857f6a90158473c&dateRestrict=y%5B1%5D&filter=1&gl=countryEG&num=1&safe=active HTTP/1.1" 200 None]
+[INFO|GoogleSearch_API|L42 2025-05-10T17:16:18+0300: LLM API call done sucessfully: 200]

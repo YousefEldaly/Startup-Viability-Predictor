@@ -1,7 +1,7 @@
-from parsers.DOCXParser import DOCXParser
-from parsers.PDFParser import PDFParser
-from parsers.PPTXParser import PPTXParser
-from parsers.TXTParser import TXTParser
+from .parsers.DOCXParser import DOCXParser
+from .parsers.PDFParser import PDFParser
+from .parsers.PPTXParser import PPTXParser
+from .parsers.TXTParser import TXTParser
 from algorithms.services.DocumentDownloader import DocumentDownloader
 import logging
 from algorithms.parsing.DocumentFormatDetector import DocumentFormatDetector
@@ -20,6 +20,7 @@ class DocumentProcessor:
 
 
     def extract_document_text(self, document_entry, output_dir):
+        logger.info(f'Extracting text from {document_entry}')
         try:
             fmt = self.format_detector.detect_format(document_entry)
             if fmt == 'google_docs':
@@ -38,6 +39,7 @@ class DocumentProcessor:
 
             
             if self.parser != None:
+                logger.info('Extraction done successfully')
                 return self.parser.extract_text(self.file_path)
         except Exception as e:
             logger.exception(f"An Exception occured while processing files: {str(e)}")
@@ -53,6 +55,8 @@ class DocumentProcessor:
             return PPTXParser()
         elif fmt == 'docx':
             return DOCXParser()
+        elif fmt == 'linkedin':
+            raise ValueError('Can not parse Linkedin profiles. This is against their rules')
         else:
             raise Exception(f"Can not find compatible parser with format {fmt}")
 

@@ -88,6 +88,8 @@ def setup_logging():
     #     queue_handler.listener.start()
     #     atexit.register(queue_handler.listener.stop)
 
+
+
 def update_root_dir_in_env():
     root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__)))
 

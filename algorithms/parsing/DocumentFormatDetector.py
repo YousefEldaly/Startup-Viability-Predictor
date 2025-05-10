@@ -10,6 +10,8 @@ class DocumentFormatDetector():
                 return 'google_slides'
             elif re.search(r'drive\.google\.com', document_entry, re.IGNORECASE):
                 return 'google_drive'
+            elif re.search(r'www.linkedin', document_entry, re.IGNORECASE):
+                return 'linkedin'
             elif document_entry.lower().endswith('.pdf'):
                 return 'pdf'
             elif document_entry.lower().endswith('.txt'):
