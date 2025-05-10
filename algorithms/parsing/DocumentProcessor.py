@@ -3,12 +3,14 @@ from parsers.PDFParser import PDFParser
 from parsers.PPTXParser import PPTXParser
 from parsers.TXTParser import TXTParser
 from algorithms.services.DocumentDownloader import DocumentDownloader
+import logging
 from algorithms.parsing.DocumentFormatDetector import DocumentFormatDetector
 
-#TODO: handle unkown formats
-#TODO: add logging
-#TODO: add constant downloads directory
+
 #TODO: use dynamic path calls from project root
+
+logger = logging.getLogger(__name__)
+
 class DocumentProcessor:
     def __init__(self):
         self.parser = None
@@ -18,43 +20,42 @@ class DocumentProcessor:
 
 
     def extract_document_text(self, document_entry, output_dir):
-        fmt = self.format_detector.detect_format(document_entry)
-        if fmt == 'google_docs':
-            self.file_path = self.document_downloader.download_google_doc_file(document_entry, output_dir)
-            print(f'the file path is {self.file_path}')
-            fmt = self.format_detector.detect_format(self.file_path)
-            print(fmt)
-        elif fmt == 'google_slides':
-            self.file_path = self.document_downloader.download_google_slides_file(document_entry, output_dir)
-            fmt = self.format_detector.detect_format(self.file_path)
-            print(fmt)
-        elif fmt == 'google_drive':
-            self.file_path = self.document_downloader.download_google_drive_file(document_entry, output_dir)
-            fmt = self.format_detector.detect_format(self.file_path)
-            print(fmt)
-        else:
-            self.file_path = document_entry
+        try:
+            fmt = self.format_detector.detect_format(document_entry)
+            if fmt == 'google_docs':
+                self.file_path = self.document_downloader.download_google_doc_file(document_entry, output_dir)
+                fmt = self.format_detector.detect_format(self.file_path)
+            elif fmt == 'google_slides':
+                self.file_path = self.document_downloader.download_google_slides_file(document_entry, output_dir)
+                fmt = self.format_detector.detect_format(self.file_path)
+            elif fmt == 'google_drive':
+                self.file_path = self.document_downloader.download_google_drive_file(document_entry, output_dir)
+                fmt = self.format_detector.detect_format(self.file_path)
+            else:
+                self.file_path = document_entry
 
-        self.parser = self.parser_factory(fmt)
+            self.parser = self.parser_factory(fmt)
 
+            
+            if self.parser != None:
+                return self.parser.extract_text(self.file_path)
+        except Exception as e:
+            logger.exception(f"An Exception occured while processing files: {str(e)}")
         
-        if self.parser != None:
-            return self.parser.extract_text(self.file_path)
 
     def parser_factory(self, fmt):
-        try:
-            if fmt == 'pdf':
-                return PDFParser()
-            elif fmt == 'txt':
-                return TXTParser()
-            elif fmt == 'pptx':
-                return PPTXParser()
-            elif fmt == 'docx':
-                return DOCXParser()
-            else:
-                return None
-        except Exception as e:
-            return f"Error extracting: {str(e)}"
+
+        if fmt == 'pdf':
+            return PDFParser()
+        elif fmt == 'txt':
+            return TXTParser()
+        elif fmt == 'pptx':
+            return PPTXParser()
+        elif fmt == 'docx':
+            return DOCXParser()
+        else:
+            raise Exception(f"Can not find compatible parser with format {fmt}")
+
 
 if __name__ == "__main__":
 
@@ -85,5 +86,5 @@ if __name__ == "__main__":
     
     for name, path in test_cases.items():
         print(f"\n--- Testing: {name} ---")
-        extracted_text = processor.extract_document_text(path, r'D:\Study\Level4\grad project\VC-management-system\algorithms\parsing')
+        extracted_text = processor.extract_document_text(path, r'D:\Study\Level4\grad project\VC-management-system\algorithms\parsing\downloads')
         print(extracted_text[:1000])

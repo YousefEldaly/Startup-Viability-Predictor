@@ -23,8 +23,8 @@ class DocumentDownloader:
         # Make the request
         response = requests.get(download_url, stream=True)
         if response.status_code != 200:
-            raise
-            return None
+            raise Exception(f"Failed to download. Status code: {response.status_code}")
+
 
         # Extract filename from the response headers
         content_disposition = response.headers.get('Content-Disposition', '')
@@ -41,14 +41,12 @@ class DocumentDownloader:
                 if chunk:
                     f.write(chunk)
 
-        print(f"File successfully downloaded to: {output_path}")
         return output_path
 
     def download_google_doc_file(self, url, output_dir):
         file_id = self.extract_file_id(url)
         if not file_id:
-            print("Could not extract file ID from the URL.")
-            return
+            raise ValueError("Could not extract file ID from the URL.")
 
         export_url = f"https://docs.google.com/document/d/{file_id}/export?format=docx"
         response = requests.get(export_url)
@@ -61,7 +59,7 @@ class DocumentDownloader:
                 f.write(response.content)
             print(f"File successfully downloaded to: {output_filename}")
         else:
-            print(f"Failed to download. Status code: {response.status_code}")
+            raise Exception(f"Failed to download. Status code: {response.status_code}")
         
         return output_filename
 
@@ -82,7 +80,7 @@ class DocumentDownloader:
                 f.write(response.content)
             print(f"File successfully downloaded to: {output_filename}")
         else:
-            print(f"Failed to download. Status code: {response.status_code}")
+            raise Exception(f"Failed to download. Status code: {response.status_code}")
 
         return output_filename
 

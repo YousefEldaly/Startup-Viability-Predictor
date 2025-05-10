@@ -8,8 +8,6 @@ class DocumentFormatDetector():
                 return 'google_docs'
             elif re.search(r'https://docs\.google\.com/presentation/d/', document_entry):
                 return 'google_slides'
-            elif re.search(r'linkedin\.com', document_entry, re.IGNORECASE):
-                return 'linkedin'
             elif re.search(r'drive\.google\.com', document_entry, re.IGNORECASE):
                 return 'google_drive'
             elif document_entry.lower().endswith('.pdf'):
@@ -23,8 +21,6 @@ class DocumentFormatDetector():
             elif document_entry.lower().endswith('.docx'):
                 print('docx')
                 return 'docx'
-            elif document_entry.startswith('http'):
-                return 'url'
             else:
-                return 'unknown'
-        raise ValueError
+                raise ValueError(f"Can not detect format of given input: {document_entry}")
+        raise ValueError('Input should be a string')
