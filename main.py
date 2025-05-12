@@ -1,19 +1,21 @@
 import os
 import sys
+from dotenv import load_dotenv
+load_dotenv()
 
 ROOT_DIR = os.path.abspath(os.path.dirname(__file__))
 os.environ['ROOT_DIR'] = ROOT_DIR
 sys.path.insert(0, ROOT_DIR)
-print(ROOT_DIR)
 
 
 from API_wrapper import OpenAI_API, GoogleSearch_API
 from utils.configs import Config
 import logging.config
 import atexit
-from utils.utils import get_prompt, get_json_response_format, setup_logging, update_root_dir_in_env
+from utils.utils import get_prompt, get_json_response_format, setup_logging, extract_urls_from_google_search_response
 from algorithms.parsing.DocumentProcessor import DocumentProcessor
 import json
+from algorithms.RAG.RAGChain import RAGChain
 
 logger = logging.getLogger(__name__)
 
@@ -40,6 +42,16 @@ result = llm.get_json_response(prompt, startup_info, json_response_format)
 print(f"result of prompt is:{result}")
 
 google_search_api = GoogleSearch_API()
-results = google_search_api.search(result["search_query"])
+response = google_search_api.search(result["search_query"], 2)
+urls = extract_urls_from_google_search_response(response)
 
-print(results)
+agent = RAGChain()
+print(agent.embed_docs(
+        agent.split_docs(
+            agent.load_docs(urls)),
+            "sentence-transformers/all-mpnet-base-v2"))
+
+
+
+
+#print(results)

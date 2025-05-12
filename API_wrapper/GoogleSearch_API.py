@@ -34,14 +34,14 @@ class GoogleSearch_API:
             return response.json()
         
         except Exception as e:
-            logger.exception(f"An Exception occured during calling the LLM API: {str(e)}")
+            logger.exception(f"An Exception occured during calling the GoogleSearch API: {str(e)}")
 
 
     def _log_API_call_status(self, status_code):
         if status_code == 200:
-            logger.info(f"LLM API call done sucessfully: {status_code}")
+            logger.info(f"Search is done sucessfully: {status_code}")
         else:
-            logger.exception(f"LLM API call was unsuccessful: {status_code}")
+            logger.exception(f"Search is unsuccessful: {status_code}")
             raise Exception('Check call parameters; api_key, model, etc.')
 
 
